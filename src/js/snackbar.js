@@ -45,7 +45,7 @@
 
     pos: 'bottom-left',
 
-    duration: 5000,
+    duration: 3000,
 
     customClass: '',
 
@@ -75,6 +75,8 @@
     $p.style.color = options.textColor;
     $p.style.fontSize = '14px';
     $p.style.fontWeight = 300;
+    $p.style.width = '100%';
+    $p.style.textAlign = 'center';
     $p.style.lineHeight = '1em';
     $p.innerHTML = options.text;
     Snackbar.snackbar.appendChild($p);
