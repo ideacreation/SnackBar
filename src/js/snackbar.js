@@ -75,7 +75,7 @@
     $p.style.color = options.textColor;
     $p.style.fontSize = '14px';
     $p.style.fontWeight = 300;
-    $p.style.width = '100%';
+    $p.style.width = '90%';
     $p.style.textAlign = 'center';
     $p.style.lineHeight = '1em';
     $p.innerHTML = options.text;
