@@ -107,7 +107,7 @@
     }.bind(Snackbar.snackbar));
 
     Snackbar.current = Snackbar.snackbar;
-    document.body.style.overflow = 'hidden';
+    
 
     if (options.pos === 'top-left' || options.pos === 'top-center' || options.pos === 'top' || options.pos === 'top-right')
       Snackbar.snackbar.style.top = '-100px';
@@ -124,9 +124,7 @@
     else if (options.pos === 'bottom-center' || options.pos === 'bottom')
       Snackbar.snackbar.style.bottom = '-25px';
 
-    setTimeout(function () {
-      document.body.style.overflow = 'auto';
-    }, 500);
+    
   };
 
   Snackbar.close = function () {
