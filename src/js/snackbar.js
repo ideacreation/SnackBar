@@ -97,7 +97,7 @@
         Snackbar.current.style.opacity = 0;
       }
 
-    }.bind(Snackbar.snackbar), $defaults.duration);
+    }.bind(Snackbar.snackbar), options.duration);
 
     Snackbar.snackbar.addEventListener('transitionend', function (event, elapsed) {
       if (event.propertyName === 'opacity' && this.style.opacity === 0) {
